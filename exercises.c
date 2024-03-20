@@ -110,7 +110,27 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+  Stack* pilaAux = create_stack();
+
+  while((int)top(P1) != -1)
+    {
+      int *elemento = top(P1);
+      push(pilaAux, elemento);
+      pop(P1);
+    }
+
+  while (top(pilaAux) != -1)
+    {
+      int *elem = top(pilaAux);
+      push(P1, elem);
+      push(P2, elem);
+      pop(pilaAux);
+    }
+
+  free(pilaAux);
+  
 }
 
 /*

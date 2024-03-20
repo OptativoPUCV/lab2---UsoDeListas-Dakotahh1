@@ -38,3 +38,17 @@ Wed 20 Mar 2024 02:33:36 AM UTC:
  tests:  3|2
 total_score: 40/70
 b65dbe2
+Wed 20 Mar 2024 03:40:50 AM UTC: 
+ exercises.c | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:117:9: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  117 |   while((int)top(P1) != -1)
+      |         ^
+exercises.c:124:23: error: comparison between pointer and integer [-Werror]
+  124 |   while (top(pilaAux) != -1)
+      |                       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+4396169
