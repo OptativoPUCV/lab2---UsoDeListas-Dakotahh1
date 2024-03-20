@@ -50,7 +50,7 @@ List* crea_lista() {
       *dato = i;
       if (i == 0)
       {
-        pushfront(L, dato);
+        pushFront(L, dato);
       }
       else
       {
