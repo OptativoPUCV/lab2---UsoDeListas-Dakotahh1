@@ -571,3 +571,16 @@ exercises.c:161:5: error: ‘else’ without a previous ‘if’
       |     ^~~~
 Compilation failed
 e23ee91
+Thu 21 Mar 2024 03:43:47 AM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:156:71: error: expected statement before ‘)’ token
+  156 |     else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'))
+      |                                                                       ^
+exercises.c:160:5: error: ‘else’ without a previous ‘if’
+  160 |     else
+      |     ^~~~
+Compilation failed
+c756496
