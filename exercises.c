@@ -156,7 +156,9 @@ int parentesisBalanceados(char *cadena) {
           return 0;
         }
       }
+      pop(pila);
     }
+    i++;
   }
    return 1;
 }
