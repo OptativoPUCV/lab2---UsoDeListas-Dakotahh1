@@ -154,7 +154,7 @@ int parentesisBalanceados(char *cadena) {
       if (cadena[i] == ')')
       {
         if (top(pila) == NULL){
-          return 1;
+          return 0;
         }
       }
       pop(pila);
@@ -162,6 +162,6 @@ int parentesisBalanceados(char *cadena) {
     i++;
     
   }
-   return 0;
+   return 1;
 }
 
