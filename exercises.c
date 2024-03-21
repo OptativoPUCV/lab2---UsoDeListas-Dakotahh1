@@ -161,6 +161,6 @@ int parentesisBalanceados(char *cadena)
     }
     i++;
   }
-  return 1;
+  return (top(pila) == NULL) ? 1:0;
 }
 
