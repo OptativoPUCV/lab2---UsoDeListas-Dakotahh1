@@ -145,7 +145,7 @@ int parentesisBalanceados(char *cadena)
   Stack* pila = create_stack();
   int i = 0;
   int longitud = strlen(cadena);
-  if (longitud % 2 == 0) return 0;
+  if (longitud % 2 != 0) return 0;
 
   while (cadena[i] != '\0')
   {
