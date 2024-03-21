@@ -146,8 +146,7 @@ int parentesisBalanceados(char *cadena)
   int longitud = strlen(cadena);
   if (longitud % 2 != 0) return 0;
 
-  for(int i = 0; i < longitud; i++)
-  {
+  for(int i = 0; i < longitud; i++){
     if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
     {
       push(pila, &cadena[i]);
